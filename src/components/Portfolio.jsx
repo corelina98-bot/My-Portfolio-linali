@@ -35,11 +35,12 @@ import gnQuickCheck from "../assets/files/GN QuickCheck.pdf";
 import bankApp from "../assets/files/Bank-app (Python).pdf";
 import higherEduImage from "../assets/images/image.png";
 import profileImg from "../assets/images/lina.jpg";
-import cv from "../assets/files/Linali.pdf";
+import cv from "../assets/files/G.D LINALI MADHUMINI CV.pdf";
 import greenNatureImg from "../assets/images/Green.png";
 import greenNatureVideo from "../assets/videos/Green-nature -web.mp4";
-import linaliImg from "../assets/images/linali.png";
-import olIctImg from "../assets/images/OL-ICT.png";
+import epermitImg from "../assets/images/epermit.png";
+import gnImg from "../assets/images/GN.png";
+import bankImg from "../assets/images/bank.png";
 import mlImage from "../assets/images/ML.png";
 
 const Portfolio = () => {
@@ -810,8 +811,9 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
             image: linaliImg,
             description: "An interactive and gamified personal portfolio built with React, featuring animations, smooth transitions, and a modern UI. This project showcases my skills in front-end development, UI/UX design, and creating engaging user experiences.",
             tech: ["React", "CSS", "Animations"],
-            liveDemo: "https://your-portfolio-link.com",
-            github: "https://github.com/yourusername/portfolio"
+            liveDemo: "https://github.com/yourusername/portfolio",
+            github: "https://github.com/yourusername/portfolio",
+            demoText: "GitHub"
           })}>View Project</button>
         </div>
       </div>
@@ -870,8 +872,9 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
             image: olIctImg,
             description: "The Smart O/L Gamified Web Application is for G.C.E Ordinary Level students to help learn ICT effectively and enjoyably using gamification techniques. It includes interactive lessons, quizzes, and rewards to motivate students.",
             tech: ["MongoDB", "Express.js", "React", "Node.js"],
-            liveDemo: "",
-            github: "https://github.com/corelina98-bot/Smart-OL-ICT.git"
+            liveDemo: "https://github.com/corelina98-bot/Smart-OL-ICT.git",
+            github: "https://github.com/corelina98-bot/Smart-OL-ICT.git",
+            demoText: "GitHub"
           })}>View Project</button>
         </div>
       </div>
@@ -881,7 +884,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
       <div className="project-card">
         <div className="project-header">
           <h3>ePermit</h3>
-          <span className="project-tag">Completed</span>
+          <span className="project-tag">Ongoing</span>
         </div>
 
         <p className="project-description">
@@ -896,7 +899,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
         <div className="project-actions">
           <button onClick={() => openProjectModal({
             title: "ePermit",
-            image: olIctImg,
+            image: epermitImg,
             description: "This project is a developed web-based system to simplify the permit approval process under the domain of Politics and Governance. I made the complete SRS document which include use case diagrams, functional & non-functional requirements and UI mockups.",
             tech: ["Web Technologies", "UI/UX Design"],
             liveDemo: "",
@@ -908,7 +911,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
       <div className="project-card">
         <div className="project-header">
           <h3>GN QuickCheck</h3>
-          <span className="project-tag">Completed</span>
+          <span className="project-tag">Ongoing</span>
         </div>
 
         <p className="project-description">
@@ -924,7 +927,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
         <div className="project-actions">
           <button onClick={() => openProjectModal({
             title: "GN QuickCheck",
-            image: greenNatureImg,
+            image: gnImg,
             description: "This project is a A Mindful Digital Platform for Checking Grama Niladhari Availability and Required Documentation. In this project we designed a digital platform prototype to check Grama Niladhari availability and also conducted UX research and collaborated with team members to improve usability.",
             tech: ["UX Design", "Prototyping", "UI/UX Research"],
             liveDemo: "",
@@ -950,7 +953,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
         <div className="project-actions">
           <button onClick={() => openProjectModal({
             title: "Bank App",
-            image: linaliImg,
+            image: bankImg,
             description: "A Python-based bank application project.",
             tech: ["Python"],
             liveDemo: "",
