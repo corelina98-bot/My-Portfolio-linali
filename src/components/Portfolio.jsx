@@ -961,7 +961,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
 
   {activeTab === 'documents' && (
     <div className="certificates-section">
-      <div className="projects" style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+      <div className="projects-grid">
         <div
           className="project-card certificate"
           onClick={() =>
@@ -970,7 +970,6 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
               title: "ePermit Project Document",
             })
           }
-          style={{ width: '200px', height: '200px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
         >
           <h4>ePermit Project Document</h4>
           <p>University Project</p>
@@ -985,7 +984,6 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
               title: "GN QuickCheck Project Document",
             })
           }
-          style={{ width: '200px', height: '200px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
         >
           <h4>GN QuickCheck Project Document</h4>
           <p>University Group Project</p>
@@ -1000,7 +998,6 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
               title: "Bank App (Python) Project Document",
             })
           }
-          style={{ width: '200px', height: '200px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}
         >
           <h4>Bank App (Python) Project Document</h4>
           <p>Python Project</p>
