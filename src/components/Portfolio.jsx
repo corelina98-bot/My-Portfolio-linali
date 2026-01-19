@@ -35,7 +35,7 @@ import gnQuickCheck from "../assets/files/GN QuickCheck.pdf";
 import bankApp from "../assets/files/Bank-app (Python).pdf";
 import higherEduImage from "../assets/images/image.png";
 import profileImg from "../assets/images/lina.jpg";
-import cv from "../assets/files/G.D.LINALI MADHUMINI - CV.pdf";
+import cv from "../assets/files/Linali.pdf";
 import greenNatureImg from "../assets/images/Green.png";
 import greenNatureVideo from "../assets/videos/Green-nature -web.mp4";
 import linaliImg from "../assets/images/linali.png";
@@ -881,7 +881,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
       <div className="project-card">
         <div className="project-header">
           <h3>ePermit</h3>
-          <span className="project-tag">Ongoing</span>
+          <span className="project-tag">Completed</span>
         </div>
 
         <p className="project-description">
@@ -908,7 +908,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
       <div className="project-card">
         <div className="project-header">
           <h3>GN QuickCheck</h3>
-          <span className="project-tag">Ongoing</span>
+          <span className="project-tag">Completed</span>
         </div>
 
         <p className="project-description">
