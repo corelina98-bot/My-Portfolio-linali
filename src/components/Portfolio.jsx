@@ -876,10 +876,12 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
         </div>
       </div>
 
+    
+
       <div className="project-card">
         <div className="project-header">
           <h3>ePermit</h3>
-          <span className="project-tag">Completed</span>
+          <span className="project-tag">Ongoing</span>
         </div>
 
         <p className="project-description">
@@ -906,7 +908,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
       <div className="project-card">
         <div className="project-header">
           <h3>GN QuickCheck</h3>
-          <span className="project-tag">Completed</span>
+          <span className="project-tag">Ongoing</span>
         </div>
 
         <p className="project-description">
