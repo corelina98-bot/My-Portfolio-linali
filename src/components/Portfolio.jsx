@@ -1023,10 +1023,10 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
           <a href="https://www.linkedin.com/in/linali-madhumini-06958935a"><FaLinkedin /></a>
           <a href="https://www.instagram.com/linalimadhumini?igsh=MXE1b3ljbzgzbmR3Ng=="><FaInstagram /></a>
           <a href="https://wa.me/94755852082" target="_blank"><FaWhatsapp /></a>
-          <a href="mailto:s23010147@ousl.lk"><FaEnvelope /></a>
+          <a href="mailto:Corelina98@gmail.com"><FaEnvelope /></a>
         </div>
 
-        <p>Email: s23010147@ousl.lk</p>
+        <p>Email: Corelina98@gmail.com</p>
         <p>Role: Software Engineer</p>
       </section>
 
