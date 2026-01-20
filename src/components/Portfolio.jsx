@@ -42,6 +42,8 @@ import epermitImg from "../assets/images/epermit.png";
 import gnImg from "../assets/images/GN.png";
 import bankImg from "../assets/images/bank.png";
 import mlImage from "../assets/images/ML.png";
+import linaliImg from "../assets/images/linali.png";
+import olIctImg from "../assets/images/OL-ICT.png";
 
 const Portfolio = () => {
 
@@ -812,7 +814,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
             description: "An interactive and gamified personal portfolio built with React, featuring animations, smooth transitions, and a modern UI. This project showcases my skills in front-end development, UI/UX design, and creating engaging user experiences.",
             tech: ["React", "CSS", "Animations"],
             liveDemo: "https://github.com/yourusername/portfolio",
-            github: "https://github.com/yourusername/portfolio",
+            github: "https://github.com/corelina98-bot/My-Portfolio-linali.git",
             demoText: "GitHub"
           })}>View Project</button>
         </div>
@@ -954,10 +956,10 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
           <button onClick={() => openProjectModal({
             title: "Bank App",
             image: bankImg,
-            description: "A Python-based bank application project.",
+            description: "This project is about a analysis and a Python command-line app that simulates a basic bank account management system.",
             tech: ["Python"],
-            liveDemo: "",
-            github: ""
+            liveDemo: "https://corelina98-bot.github.io/Bank-App-Python-/",
+            github: "https://github.com/corelina98-bot/Bank-App-Python-.git"
           })}>View Project</button>
         </div>
       </div>

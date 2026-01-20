@@ -6,6 +6,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 .reveal {
   opacity: 0;
@@ -37,6 +38,9 @@ html {
 body {
   background: #0b0f19;
   color: #eaeaea;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100%;
+  max-width: 100vw;
 }
 
 /* NAVBAR */
@@ -572,6 +576,7 @@ footer {
   max-height: 90vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 
   background: linear-gradient(
     135deg,
@@ -697,6 +702,7 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   animation: slideInRight 0.4s ease;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .profile-image-container {
@@ -766,6 +772,7 @@ footer {
   animation: scaleIn 0.4s ease;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .cv-iframe {
@@ -814,7 +821,7 @@ footer {
 
 .education-content {
   position: relative;
-  
+
   width: 1000px;
   height: 550px;
   background: rgba(255, 255, 255, 0.1);
@@ -824,6 +831,7 @@ footer {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   animation: scaleIn 0.4s ease;
   text-align: center;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .education-content h3 {
@@ -886,6 +894,7 @@ footer {
   animation: scaleIn 0.4s ease;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .education-pdf-content h3 {
