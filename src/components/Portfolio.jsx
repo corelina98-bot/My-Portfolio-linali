@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Portfolio.css";
+import Typed from "typed.js";
 import {
   FaGithub,
   FaLinkedin,
@@ -46,8 +47,18 @@ import linaliImg from "../assets/images/linali.png";
 import olIctImg from "../assets/images/OL-ICT.png";
 
 const Portfolio = () => {
+  const typedRef = useRef(null);
 
   const [activeTab, setActiveTab] = useState('projects');
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Hamburger toggle
+  const handleMenuToggle = () => setMenuOpen(!menuOpen);
+
+  // Close menu on link click
+  const handleLinkClick = (id) => {
+    setMenuOpen(false);
+  };
 
   const [selectedCert, setSelectedCert] = useState(null);
 
@@ -126,6 +137,25 @@ const Portfolio = () => {
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
+  /* Typed.js animation */
+  useEffect(() => {
+    const typed = new Typed(typedRef.current, {
+      strings: [
+        "Software Engineering Undergraduate",
+        "Frontend Developer",
+        "Backend Developer",
+        "UI/UX Designer",
+        "Future Full Stack Engineer"
+      ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 1500,
+      loop: true,
+    });
+
+    return () => typed.destroy();
+  }, []);
+
   /* Download function */
   const downloadImage = (src, filename) => {
     const link = document.createElement('a');
@@ -141,11 +171,16 @@ const Portfolio = () => {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="logo">G.D. Linali Madhumini</div>
-        <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+        <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <a href="#about" onClick={handleLinkClick}>About</a>
+          <a href="#skills" onClick={handleLinkClick}>Skills</a>
+          <a href="#projects" onClick={handleLinkClick}>Projects</a>
+          <a href="#contact" onClick={handleLinkClick}>Contact</a>
+        </div>
+        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={handleMenuToggle}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
 
@@ -176,7 +211,9 @@ const Portfolio = () => {
         </div>
 
         <h1>G.D. Linali Madhumini</h1>
-        <h2>Undergraduate Software Engineer</h2>
+        <h2>
+          <span ref={typedRef}></span>
+        </h2>
         <div
           className="profile-circle"
           style={{
@@ -932,8 +969,8 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
             image: gnImg,
             description: "This project is a A Mindful Digital Platform for Checking Grama Niladhari Availability and Required Documentation. In this project we designed a digital platform prototype to check Grama Niladhari availability and also conducted UX research and collaborated with team members to improve usability.",
             tech: ["UX Design", "Prototyping", "UI/UX Research"],
-            liveDemo: "",
-            github: ""
+            liveDemo: "https://www.figma.com/proto/UANxAXZjce7K53h5paMu2C/EEI4361---GN_Quickcheck--Phone-?node-id=2-7&t=lqJ9iNeOyIXFHZFW-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+            github: "https://github.com/corelina98-bot/GN-QuickCheck-.git"
           })}>View Project</button>
         </div>
       </div>
