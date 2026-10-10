@@ -210,18 +210,17 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <div className="game-hud"><span><i className="status-dot"></i> PORTFOLIO.EXE</span><span>PLAYER PROFILE <b>№ 001</b></span></div>
+        <div className="game-hud"><span><i className="status-dot"></i> PORTFOLIO.EXE</span><span>PROFILE <b></b></span></div>
         <div className="hero-stage">
           <div className="hero-copy">
             <p className="hero-kicker">✦ CHARACTER SELECTED · SRI LANKA</p>
-            <h1>G.D. Linali<br /><span>Madhumini</span></h1>
+            <h1>Linali<br /><span>Madhumini</span></h1>
             <h2><span ref={typedRef}></span></h2>
             <p className="hero-description">
-              Software engineering undergraduate building thoughtful digital experiences, one line of code at a time.
-            </p>
+</p>
             <div className="hero-buttons">
-              <a href="#projects" className="btn primary"><span>▶</span> EXPLORE QUESTS</a>
-              <button className="btn secondary" onClick={openCVModal}>OPEN PLAYER FILE</button>
+              <a href="#projects" className="btn primary"><span>▶</span> EXPLORE PROJECTS</a>
+              <button className="btn secondary" onClick={openCVModal}>OPEN CV</button>
             </div>
             <div className="hero-stats">
               <div><strong>03</strong><span>YEARS LEARNING</span></div>
@@ -231,7 +230,7 @@ const Portfolio = () => {
           </div>
           <div className="hero-character-wrap">
             <div className="character-frame">
-              <div className="frame-label">LV. 03 <span>✦</span> CREATOR</div>
+              <div className="frame-label">LV. 03 <span>✦</span>SOFTWARE ENGINEER</div>
               <div
                 className="profile-circle"
                 role="button"
@@ -243,7 +242,7 @@ const Portfolio = () => {
               ></div>
               <div className="character-caption"><span>✦</span> THE DEVELOPER <span>✦</span></div>
             </div>
-            <div className="floating-chip chip-one">&lt; CODE /&gt;</div>
+            <div className="floating-chip chip-one">&lt; CODING /&gt;</div>
             <div className="floating-chip chip-two">✧ CREATIVE MODE</div>
           </div>
         </div>
@@ -903,7 +902,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
       <div className="project-card">
         <div className="project-header">
           <h3>Smart O/L ICT</h3>
-          <span className="project-tag">Ongoing</span>
+          <span className="project-tag">Completed</span>
         </div>
 
         <p className="project-description">
@@ -936,7 +935,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
       <div className="project-card">
         <div className="project-header">
           <h3>ePermit</h3>
-          <span className="project-tag">Ongoing</span>
+          <span className="project-tag">Completed</span>
         </div>
 
         <p className="project-description">
@@ -963,7 +962,7 @@ I am eager to collaborate on meaningful projects, learn from experienced develop
       <div className="project-card">
         <div className="project-header">
           <h3>GN QuickCheck</h3>
-          <span className="project-tag">Ongoing</span>
+          <span className="project-tag">Completed</span>
         </div>
 
         <p className="project-description">
