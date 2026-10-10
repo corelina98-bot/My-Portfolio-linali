@@ -170,22 +170,22 @@ const Portfolio = () => {
     <>
       {/* NAVBAR */}
       <nav className="navbar">
-        <div className="logo">G.D. Linali Madhumini</div>
+        <a className="logo" href="#home"><span className="brand-mark">LM</span> PLAYER ONE <span className="brand-name">/ LINALI MADHUMINI</span></a>
         <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <a href="#about" onClick={handleLinkClick}>About</a>
-          <a href="#skills" onClick={handleLinkClick}>Skills</a>
-          <a href="#projects" onClick={handleLinkClick}>Projects</a>
-          <a href="#contact" onClick={handleLinkClick}>Contact</a>
+          <a href="#about" onClick={handleLinkClick}><span>01</span> PROFILE</a>
+          <a href="#skills" onClick={handleLinkClick}><span>02</span> SKILLS</a>
+          <a href="#projects" onClick={handleLinkClick}><span>03</span> QUESTS</a>
+          <a href="#contact" onClick={handleLinkClick}><span>04</span> CONTACT</a>
         </div>
-        <div className={`hamburger ${menuOpen ? "active" : ""}`} onClick={handleMenuToggle}>
+        <button className={`hamburger ${menuOpen ? "active" : ""}`} onClick={handleMenuToggle} aria-label="Toggle navigation" aria-expanded={menuOpen}>
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </nav>
 
       {/* HERO */}
-      <section className="hero">
+      <section className="hero" id="home">
         <div className="sky">
           {[...Array(6)].map((_, i) => (
             <div
@@ -210,31 +210,44 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <h1>G.D. Linali Madhumini</h1>
-        <h2>
-          <span ref={typedRef}></span>
-        </h2>
-        <div
-          className="profile-circle"
-          style={{
-            backgroundImage: `url(${profileImg})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-          onClick={openProfileModal}
-        ></div>
-
-        <p>
-      Undergraduate Software Engineering student with a strong interest in modern web
-              technologies, clean architecture, and interactive user experiences.
-        </p>
-
-        <div className="hero-buttons">
-          <a href="#projects" className="btn primary">View Projects</a>
-          <button className="btn secondary" onClick={openCVModal}>
-            View CV
-          </button>
+        <div className="game-hud"><span><i className="status-dot"></i> PORTFOLIO.EXE</span><span>PLAYER PROFILE <b>№ 001</b></span></div>
+        <div className="hero-stage">
+          <div className="hero-copy">
+            <p className="hero-kicker">✦ CHARACTER SELECTED · SRI LANKA</p>
+            <h1>G.D. Linali<br /><span>Madhumini</span></h1>
+            <h2><span ref={typedRef}></span></h2>
+            <p className="hero-description">
+              Software engineering undergraduate building thoughtful digital experiences, one line of code at a time.
+            </p>
+            <div className="hero-buttons">
+              <a href="#projects" className="btn primary"><span>▶</span> EXPLORE QUESTS</a>
+              <button className="btn secondary" onClick={openCVModal}>OPEN PLAYER FILE</button>
+            </div>
+            <div className="hero-stats">
+              <div><strong>03</strong><span>YEARS LEARNING</span></div>
+              <div><strong>12<span>+</span></strong><span>TECH SKILLS</span></div>
+              <div><strong>06</strong><span>PROJECTS</span></div>
+            </div>
+          </div>
+          <div className="hero-character-wrap">
+            <div className="character-frame">
+              <div className="frame-label">LV. 03 <span>✦</span> CREATOR</div>
+              <div
+                className="profile-circle"
+                role="button"
+                tabIndex={0}
+                aria-label="View profile portrait"
+                style={{ backgroundImage: `url(${profileImg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                onClick={openProfileModal}
+                onKeyDown={(event) => event.key === 'Enter' && openProfileModal()}
+              ></div>
+              <div className="character-caption"><span>✦</span> THE DEVELOPER <span>✦</span></div>
+            </div>
+            <div className="floating-chip chip-one">&lt; CODE /&gt;</div>
+            <div className="floating-chip chip-two">✧ CREATIVE MODE</div>
+          </div>
         </div>
+        <a className="scroll-cue" href="#about"><span></span> SCROLL TO START</a>
       </section>
 
       {/* ABOUT */}
